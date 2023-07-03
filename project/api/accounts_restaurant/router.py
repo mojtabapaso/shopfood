@@ -5,13 +5,13 @@ from fastapi_jwt_auth import AuthJWT
 from fastapi_jwt_auth.exceptions import *
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
-from app.core.schemas import schema
-from app.core.security.hasher import get_password_hash, verify_password
-from app.models.dependencies import get_db
-from app.models.accounts_restaurant.models import UserRestaurant, OtpCode
+from project.core.schemas import schema
+from project.core.security.hasher import get_password_hash, verify_password
+from project.models.dependencies import get_db
+from project.models.accounts_restaurant.models import UserRestaurant, OtpCode
 from random import randint
 import requests
-from app.core.utils.sender import send_otp_code
+from project.core.utils.sender import send_otp_code
 from fastapi.responses import JSONResponse
 
 router = APIRouter()

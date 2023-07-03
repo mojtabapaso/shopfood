@@ -3,8 +3,8 @@ from pydantic import BaseModel
 from pydantic import BaseModel
 
 
-class OtpCode(BaseModel):
-    phone_number: str
+# class OtpCode(BaseModel):
+#     phone_number: str
 
 
 class UserBase(BaseModel):
