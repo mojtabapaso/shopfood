@@ -59,7 +59,6 @@ class PhoneNumber(BaseModel):
 
 
 class OtpCode(BaseModel):
-    code: int
     phone_number: str
 
 

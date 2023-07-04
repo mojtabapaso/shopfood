@@ -1,1 +1,1 @@
-from project.models.accounts_client import models
+# from models.accounts_client import models
